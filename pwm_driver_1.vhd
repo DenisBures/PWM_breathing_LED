@@ -48,13 +48,13 @@ component counter is
 end component counter;   
     
 begin
-    CE_PWM : clk_en 
+    tikadlo_pro_rychlost : clk_en 
         generic map(G_MAX => 4) 
         port map(clk => clk, 
                  rst => rst, 
                  ce => s_ce_pwm);
         
-    PWM_CNT_INST : counter 
+    hlavni_pocitadlo : counter 
         generic map(G_BITS => C_PWM_WIDTH)
         port map(clk => clk, 
                  rst => rst, 
