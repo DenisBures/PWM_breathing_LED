@@ -1,46 +1,31 @@
-library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
-use IEEE.NUMERIC_STD.ALL;
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
 
-
-
-entity pwm_driver_2 is
-    Port ( clk : in STD_LOGIC;
-           rst : in STD_LOGIC;
-           nwm : in STD_LOGIC_VECTOR (7 downto 0);
-           led : out STD_LOGIC);
-end pwm_driver_2;
-
-architecture Behavioral of pwm_driver_2 is
-component clk_en is
-    generic (G_MAX : positive :=300_000); 
-    Port ( 
-            clk : in STD_LOGIC;
-            rst : in STD_LOGIC;
-            ce : out STD_LOGIC
-           );
-end component clk_en;	
-component counter is
-    generic ( G_BITS : positive := 8 );  
+entity PWM_driver_2 is
     port (
-        clk : in  std_logic;                             
-        rst : in  std_logic;                             
-        en  : in  std_logic;                             
-        cnt : out std_logic_vector(G_BITS - 1 downto 0)  
+        clk    : in  std_logic;
+        rst    : in  std_logic;
+        sw_i   : in  std_logic_vector(7 downto 0);
+        led    : out std_logic
     );
-end component counter;	
+end entity PWM_driver_2;
+
+architecture structural of PWM_driver_2 is
+    signal s_cnt_expanded : std_logic_vector(8 downto 0);
 begin
 
-process (clk) 
-	begin
-		if rising_edge(clk) then  
-        if rst = '1' then    
-           led      <= '0';
-        end if;
-        end if;
-        
-	end process;
+    s_cnt_expanded <= '0' & sw_i;
 
-												
+    pwm_core_inst : entity work.breathing_driver
+        generic map (
+            G_PWM_WIDTH => 8
+        )
+        port map (
+            clk => clk,
+            rst => rst,
+            cnt => s_cnt_expanded, 
+            led => led            
+        );
 
-end Behavioral;
+end architecture structural;
