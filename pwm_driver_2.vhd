@@ -21,12 +21,12 @@ component clk_en is
            );
 end component clk_en;	
 component counter is
-    generic ( G_BITS : positive := 8 );  --! Default number of bits
+    generic ( G_BITS : positive := 8 );  
     port (
-        clk : in  std_logic;                             --! Main clock
-        rst : in  std_logic;                             --! High-active synchronous reset
-        en  : in  std_logic;                             --! Clock enable input
-        cnt : out std_logic_vector(G_BITS - 1 downto 0)  --! Counter value
+        clk : in  std_logic;                             
+        rst : in  std_logic;                             
+        en  : in  std_logic;                             
+        cnt : out std_logic_vector(G_BITS - 1 downto 0)  
     );
 end component counter;	
 begin
