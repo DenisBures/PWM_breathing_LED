@@ -1,6 +1,6 @@
 # PWM_breathing_LED
 Blokové schéma:
-![Blokove schema](Drawing.jpeg)
+![Bloková schémata](PWM_driver_2.png)
 
 Zadání
 Vytvořit modul, který plynule mění jas LED diody generováním trojúhelníkového průběhu pro pracovní cyklus PWM, simulující „nádech“ a „výdech“.
