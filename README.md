@@ -5,6 +5,7 @@ Bloková schémata:
 ![](PWM_driver_2.png)
 
 Zadání:
+
 Vytvořit modul, který plynule mění jas LED diody generováním trojúhelníkového průběhu pro pracovní cyklus PWM, simulující „nádech“ a „výdech“.
 
 Pulse Width Modulation (PWM)
