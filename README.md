@@ -1,6 +1,6 @@
 # PWM_breathing_LED
-Blokové schéma:
-![Bloková schémata](<img width="908" height="441" alt="PWM_driver_2" src="https://github.com/user-attachments/assets/f89dc4c0-77ba-4d57-82ca-f9f3cbc99c1b" />
+Bloková schémata:
+![](<img width="908" height="441" alt="PWM_driver_2" src="https://github.com/user-attachments/assets/a9a16927-776e-482d-9f4a-fb85f75bc37c" />
 )
 
 Zadání
