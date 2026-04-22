@@ -5,8 +5,8 @@ Zadání: Řízení dýchání LED pomocí pulsní šířkové modulace v trojú
 ![](PWM_Breathing_LED_top.png)
 
 **Tabulka pro top:**
-|  IN   |  OUT  |
-|  ---  |  ---  |
+|  IN   |  OUT        |
+|  ---  |  ---        |
 | CLK      | LED1     |
 | RST      | LED2     |
 | SW(7:0)  | Segment1 |
