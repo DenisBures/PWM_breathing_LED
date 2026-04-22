@@ -15,6 +15,8 @@ Zadání: Řízení dýchání LED pomocí pulsní šířkové modulace v trojú
 |    X     | LED1     |
 |    X     | LED2     |
 
+Driver_1: zajišťuje chod dýchaní LED1
+
 ![](PWM_driver_1.png)
 **Tabulka pro driver1:**
 |  IN      |  OUT     |
@@ -23,7 +25,7 @@ Zadání: Řízení dýchání LED pomocí pulsní šířkové modulace v trojú
 | RST      |    X     |
 
 
-
+Driver_2: zajišťuje statický jas LED2
 
 ![](PWM_driver_2.png)
 **Tabulka pro driver2:**
@@ -34,11 +36,7 @@ Zadání: Řízení dýchání LED pomocí pulsní šířkové modulace v trojú
 | CNT      |    X     |
 
 
-**Popis komponent:**
 
-Driver_1: zajišťuje chod dýchaní LED1 
-
-Driver_1: zajišťuje statický jas LED2
 
 
 
