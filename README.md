@@ -11,7 +11,17 @@ Zadání: Řízení dýchání LED pomocí pulsní šířkové modulace v trojú
 | RST      | LED2     |
 | SW(7:0)  | Segment1 |
 |          | Segment2 |
+
 ![](PWM_driver_1.png)
+**Tabulka pro top:**
+|  IN      |  OUT     |
+|    ---   |    ---   |
+| CLK      | LED1     |
+| RST      | LED2     |
+| SW(7:0)  | Segment1 |
+|          | Segment2 |
+
+
 
 ![](PWM_driver_2.png)
 
