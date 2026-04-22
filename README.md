@@ -33,8 +33,8 @@ Driver_2: zajišťuje statický jas LED2
 **Tabulka pro driver2:**
 |  IN      |  OUT     |
 |    ---   |    ---   |
-| CLK      |          |
-| RST      |    LED2  |
+| CLK      |   LED2   |
+| RST      |    X     |
 | CNT      |    X     |
 
 
