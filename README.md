@@ -17,6 +17,8 @@ Zadání: Řízení dýchání LED pomocí pulsní šířkové modulace v trojú
 
 Driver_1: zajišťuje chod dýchaní LED1
 
+-
+
 ![](PWM_driver_1.png)
 **Tabulka pro driver1:**
 |  IN      |  OUT     |
