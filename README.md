@@ -7,9 +7,9 @@ Zadání: Řízení dýchání LED pomocí pulsní šířkové modulace v trojú
 **Tabulka pro top:**
 |  IN      |  OUT     |
 |    ---   |    ---   |
-| CLK      |    |
-| RST      |      |
-| SW(7:0)  | Seg0(6:0)|
+| CLK      | Seg0(6:0)|
+| RST      |  dp      |
+| SW(7:0)  | an(1:0)  |
 |    X     | Seg1(6:0)|
 |    X     | LED1     |
 |    X     | LED2     |
