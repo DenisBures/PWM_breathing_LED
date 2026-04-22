@@ -28,9 +28,9 @@ Zadání: Řízení dýchání LED pomocí pulsní šířkové modulace v trojú
 **Tabulka pro driver2:**
 |  IN      |  OUT     |
 |    ---   |    ---   |
-| CLK      | LED1     |
-| RST      |  LED2    |
-| CNT      |     X    |
+| CLK      |          |
+| RST      |    LED2  |
+| CNT      |    X     |
 
 
 
