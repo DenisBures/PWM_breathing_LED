@@ -35,7 +35,9 @@ Zadání: Řízení dýchání LED pomocí pulsní šířkové modulace v trojú
 
 
 **Popis komponent:**
+
 Driver_1: zajišťuje chod dýchaní LED1 
+
 Driver_1: zajišťuje statický jas LED2
 
 
