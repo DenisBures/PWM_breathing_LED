@@ -10,7 +10,7 @@ Zadání: Řízení dýchání LED pomocí pulsní šířkové modulace v trojú
 | CLK      | LED1     |
 | RST      | LED2     |
 | SW(7:0)  | Seg0(6:0)|
-|          | Seg1(6:0)|
+| <del>       </del>| Seg1(6:0)|
 |          | dp       |
 |          | an  (1:0)|
 
