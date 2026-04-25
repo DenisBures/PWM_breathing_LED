@@ -12,7 +12,7 @@ Zatímco v prvním kanálu PWM_driver_1 je tento proces automatizován pomocí �
 PWM_Breathing_LED: TOP modul 
 ![](PWM_Breathing_LED_top.png)
 
-**Tabulka pro top:**
+**Tabulka pro top model:**
 | Jméno portu | Směr | Typ |
 | :---: | :---: | :--- |
 | `clk` | in | `std_logic` |
