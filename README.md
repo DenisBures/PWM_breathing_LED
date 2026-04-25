@@ -14,7 +14,7 @@ PWM_Breathing_LED: TOP modul
 
 **Tabulka pro top:**
 | Jméno portu | Směr | Typ |
-| :--- | :---: | :--- |
+| :---: | :---: | :---: |
 | `clk` | in | `std_logic` |
 | `rst` | in | `std_logic` |
 | `btnu` | in | `std_logic` |
