@@ -31,10 +31,16 @@ PWM_Driver_1: zajišťuje chod dýchaní LED1
 ![](PWM_driver_1.png)
 
 **Tabulka pro driver1:**
-|  IN      |  OUT     |
-|    ---   |    ---   |
-| CLK      | LED1     |
-| RST      |    X     |
+| Jméno portu | Směr | Typ |
+| :---: | :---: | :--- |
+| `clk` | in | `std_logic` |
+| `rst` | in | `std_logic` |
+| `btnu` | in | `std_logic` |
+| `seg` | out | `std_logic_vector(6 downto 0)` |
+| `an` | out | `std_logic_vector(7 downto 0)` |
+| `dp` | out | `std_logic` |
+| `led1` | out | `std_logic` |
+| `led2` | out | `std_logic` |
 
 
 
