@@ -8,6 +8,8 @@ Zatímco v prvním kanálu PWM_driver_1 je tento proces automatizován pomocí �
 
 
 **Bloková schémata:**
+
+PWM_Breathing_LED: TOP modul 
 ![](PWM_Breathing_LED_top.png)
 
 **Tabulka pro top:**
@@ -20,10 +22,11 @@ Zatímco v prvním kanálu PWM_driver_1 je tento proces automatizován pomocí �
 |    X     | LED1     |
 |    X     | LED2     |
 
-Driver_1: zajišťuje chod dýchaní LED1
+PWM_Driver_1: zajišťuje chod dýchaní LED1
 
 
 ![](PWM_driver_1.png)
+
 **Tabulka pro driver1:**
 |  IN      |  OUT     |
 |    ---   |    ---   |
@@ -31,9 +34,10 @@ Driver_1: zajišťuje chod dýchaní LED1
 | RST      |    X     |
 
 
-Driver_2: zajišťuje statický jas LED2
+PWM_Driver_2: zajišťuje statický jas LED2
 
 ![](PWM_driver_2.png)
+
 **Tabulka pro driver2:**
 |  IN      |  OUT     |
 |    ---   |    ---   |
