@@ -10,7 +10,7 @@ Zatímco v prvním kanálu PWM_driver_1 je tento proces automatizován pomocí �
 **Bloková schémata:**
 
 PWM_Breathing_LED: TOP modul 
-![](top_PWM_modu.png)
+![](top_PWM_modul.png)
 
 **Tabulka pro TOP model:**
 | Jméno portu | Směr | Typ |
