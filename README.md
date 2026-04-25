@@ -44,12 +44,12 @@ PWM_Driver_2: zajišťuje statický jas LED2
 ![](PWM_driver_2.png)
 
 **Tabulka pro driver2:**
-|  IN      |  OUT     |
-|    ---   |    ---   |
-| CLK      |   LED2   |
-| RST      |    X     |
-| CNT      |    X     |
-
+| Jméno portu | Směr | Typ |
+| :---: | :---: | :--- |
+| `clk` | in | `std_logic` |
+| `rst` | in | `std_logic` |
+| `sw` | in | `std_logic_vector(7 downto0)` |
+| `led` | out | `std_logic` |
 
 
 
