@@ -24,7 +24,6 @@ PWM_Breathing_LED: TOP modul
 
 
 
-
 PWM_Driver_1: zajišťuje chod dýchaní LED1
 
 
@@ -35,7 +34,6 @@ PWM_Driver_1: zajišťuje chod dýchaní LED1
 |    ---   |    ---   |
 | CLK      | LED1     |
 | RST      |    X     |
-
 
 
 
