@@ -13,15 +13,16 @@ PWM_Breathing_LED: TOP modul
 ![](PWM_Breathing_LED_top.png)
 
 **Tabulka pro top:**
-|  IN      |  OUT     |
-|    ---   |    ---   |
-| CLK      | Seg0(6:0)|
-| RST      |  dp      |
-| SW(7:0)  | an(1:0)  |
-|    X     | Seg1(6:0)|
-|    X     | LED1     |
-|    X     | LED2     |
-
+| Jméno portu | Směr | Typ |
+| :--- | :---: | :--- |
+| `clk` | in | `std_logic` |
+| `rst` | in | `std_logic` |
+| `btnu` | in | `std_logic` |
+| `seg` | out | `std_logic_vector(6 downto 0)` |
+| `an` | out | `std_logic_vector(7 downto 0)` |
+| `dp` | out | `std_logic` |
+| `led1` | out | `std_logic` |
+| `led2` | out | `std_logic` |
 
 
 PWM_Driver_1: zajišťuje chod dýchaní LED1
