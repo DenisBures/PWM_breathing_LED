@@ -48,7 +48,7 @@ PWM_Driver_2: zajišťuje statický jas LED2
 | :---: | :---: | :--- |
 | `clk` | in | `std_logic` |
 | `rst` | in | `std_logic` |
-| `sw` | in | `std_logic_vector(7 downto0)` |
+| `sw` | in | `std_logic_vector(7 downto 0)` |
 | `led` | out | `std_logic` |
 
 
