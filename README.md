@@ -37,7 +37,7 @@ PWM_Driver_1: zajišťuje chod dýchaní LED1
 | `rst` | in | `std_logic` |
 | `led` | out | `std_logic` |
 
-První driver je z konstrukce 3 modulů, které jsou důležité pro jeho funkčnost.
+ 
 
 PWM_Driver_2: zajišťuje statický jas LED2
 
