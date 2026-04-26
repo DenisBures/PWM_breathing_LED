@@ -30,14 +30,14 @@ PWM_Driver_1: zajišťuje chod dýchaní LED1
 
 ![](PWM_driver_1.png)
 
-**Tabulka pro driver1:**
+**Tabulka pro PWM_driver1:**
 | Jméno portu | Směr | Typ |
 | :---: | :---: | :--- |
 | `clk` | in | `std_logic` |
 | `rst` | in | `std_logic` |
 | `led` | out | `std_logic` |
 
-
+První driver je z konstrukce 3 modulů, které jsou důležité pro jeho funkčnost.
 
 PWM_Driver_2: zajišťuje statický jas LED2
 
