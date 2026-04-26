@@ -37,7 +37,7 @@ PWM_Driver_1: zajišťuje chod dýchaní LED1
 | `rst` | in | `std_logic` |
 | `led` | out | `std_logic` |
 
- Jako první modul je ***clock enable*** neboli ***dělička hodin***, která hlavní hodinový signál `clk 
+ Jako první modul je ***clock enable*** neboli ***dělička hodin***, která z hlavního hodinový signálu `clk` generuje úzké pulzy `ce` s menší frekvencí. Tento výstup `ce` následně ovlivňuje rychlost PWM cyklu.   
 
 PWM_Driver_2: zajišťuje statický jas LED2
 
