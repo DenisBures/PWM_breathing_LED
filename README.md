@@ -37,7 +37,7 @@ PWM_Driver_1: zajišťuje chod dýchaní LED1
 | `rst` | in | `std_logic` |
 | `led` | out | `std_logic` |
 
- Jako první modul je ***clock enable*** neboli ***dělička hodin***, která z hlavního hodinový signálu `clk` generuje úzké pulzy `ce` s menší frekvencí. Tento výstup `ce` následně ovlivňuje rychlost PWM cyklu. Díky tomu se dostáváme k druhému modelu ***counter***, který počítá od 0 do maxima a poté zpět od 0. Každou další hodnotu přičíta v momentě kdy `ce` je aktivní. Z ***counteru*** následně vylézá výstup `cnt` ze kterého leze již pilovitý průběh, který je porovnáván v posledním modelu ***breathing_driver***. Tento model v sobě uvnitř dělá to, že porovnává jas který má v sobě s `cnt` průběhem. Výsledkem potom je PWM signál, jehož střída se plynule mění v čase, což vytváří vizuální efekt dýchání.     
+Jako první modul je ***clock enable*** neboli ***dělička hodin***, která z hlavního hodinový signálu `clk` generuje úzké pulzy `ce` s menší frekvencí. Tento výstup `ce` následně ovlivňuje rychlost PWM cyklu. Díky tomu se dostáváme k druhému modelu ***counter***, který počítá od 0 do maxima a poté zpět od 0. Každou další hodnotu přičíta v momentě kdy `ce` je aktivní. Z ***counteru*** následně vylézá výstup `cnt` ze kterého leze již pilovitý průběh, který je porovnáván v posledním modelu ***breathing_driver***. Tento model v sobě uvnitř dělá to, že porovnává jas který má v sobě s `cnt` průběhem. Výsledkem potom je PWM signál, jehož střída se plynule mění v čase, což vytváří vizuální efekt dýchání.     
 
 PWM_Driver_2: zajišťuje statický jas LED2
 
@@ -51,7 +51,7 @@ PWM_Driver_2: zajišťuje statický jas LED2
 | `sw` | in | `std_logic_vector(7 downto 0)` |
 | `led` | out | `std_logic` |
 
-
+Tento druhý driver ovládá druhou LEDku a to za pomocí switchů, které jsou na desce. Každý switch představuje 1 bit, který je buďto v režimu 0 (off) nebo 1 (on). Tyto bity dohromady budou určovat střídu PWM signálu. Díky tomu budeme ovládat jas LEDky a to pomocí toho, že v jedné periodě bude LEDka buďto více svítit nebo bude více zhasnutá, což právě bude mít na starost střída signálu. Tento efekt bude ve výsledku vypadat že LEDka bude právě pomocí switchů měnit svůj jas.
 
 
 
