@@ -55,6 +55,12 @@ Tento druhý driver ovládá druhou LEDku a to za pomocí switchů, které jsou 
 
 **Simulace**
 
+![](simulace.png)
+
+**Schéma VHDL**
+
+![](schema-vhdl.png)
+
 
 
 
