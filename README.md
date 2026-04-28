@@ -59,7 +59,7 @@ Tento druhý driver ovládá druhou LEDku a to za pomocí switchů, které jsou 
 
 **Schéma VHDL**
 
-![](schema-vhdl.png)
+![](schéma-vhdl.png)
 
 
 
