@@ -53,6 +53,9 @@ PWM_Driver_2: zajišťuje statický jas LED2
 
 Tento druhý driver ovládá druhou LEDku a to za pomocí switchů, které jsou na desce. Každý switch představuje 1 bit, který je buďto v režimu 0 (off) nebo 1 (on). Tyto bity dohromady budou určovat střídu PWM signálu. Díky tomu budeme ovládat jas LEDky a to pomocí toho, že v jedné periodě bude LEDka buďto více svítit nebo bude více zhasnutá, což právě bude mít na starost střída signálu. Tento efekt bude ve výsledku vypadat že LEDka bude právě pomocí switchů měnit svůj jas.
 
+**Simulace**
+
+
 
 
 
