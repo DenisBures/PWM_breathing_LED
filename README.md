@@ -3,7 +3,7 @@ Zadání: Řízení dýchání LED pomocí pulsní šířkové modulace, k proje
 
 -Jádrem řešení je modul ***breathing_driver***, který na základě devítibitového vstupního logického vektoru generuje výsledný PWM signál, klíčovým prvkem je využití MSB jako přepínače směru jasu, kdy při logické nule jas lineárně narůstá a při logické jedničce začne vnitřní logika zbývajících 8 bitů invertovat, čímž vytváří plynulý efekt zhasínání.
 
-Zatímco v prvním kanálu ***PWM_driver_1*** je tento proces automatizován pomocí ***čítače*** a ***děličky hodin*** pro dosažení cyklického dýchání, druhý kanál ***PWM_driver_2*** využívá stejnou logiku pro statické nastavení jasu, kde je nejvyšší bit pevně uzemněn a zbylých 8 bitů je přímo řízeno mechanickými přepínači.
+Zatímco v prvním kanálu ***PWM_driver_1*** je tento proces automatizován pomocí ***countr*** a ***clk_en*** pro dosažení cyklického dýchání, druhý kanál ***PWM_driver_2*** využívá stejnou logiku pro statické nastavení jasu, kde je nejvyšší bit pevně uzemněn a zbylých 8 bitů je přímo řízeno mechanickými přepínači.
 
 
 
