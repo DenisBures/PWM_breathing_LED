@@ -34,7 +34,7 @@ Zatímco v prvním kanálu ***PWM_driver_1*** je tento proces automatizován pom
 
 ![](/img/PWM_driver_1.png)
 
-**Tabulka pro PWM_driver1:**
+**Tabulka pro PWM_driver_1:**
 | Jméno portu | Směr | Typ |
 | :---: | :---: | :--- |
 | `clk` | in | `std_logic` |
@@ -47,7 +47,7 @@ Jako první modul je ***clock enable***, která z hlavního hodinový signálu `
 
 ![](/img/PWM_driver_2.png)
 
-**Tabulka pro PWM_driver2:**
+**Tabulka pro PWM_driver_2:**
 | Jméno portu | Směr | Typ |
 | :---: | :---: | :--- |
 | `clk` | in | `std_logic` |
