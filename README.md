@@ -1,5 +1,5 @@
 # PWM_breathing_LED
-#### Zadání 
+### Zadání 
 Řízení dýchání LED pomocí pulsní šířkové modulace, k projektu dále patří rozšíření, které obsahuje: řízení duty cyklu druhé LED pomocí switchů a hexadecimální zobrazení aktuálního nastavení na dva sedmisegmentové displeje. 
 
 -Jádrem řešení je modul ***breathing_driver***, který na základě devítibitového vstupního logického vektoru generuje výsledný PWM signál, klíčovým prvkem je využití MSB jako přepínače směru jasu, kdy při logické nule jas lineárně narůstá a při logické jedničce začne vnitřní logika zbývajících 8 bitů invertovat, čímž vytváří plynulý efekt zhasínání.
