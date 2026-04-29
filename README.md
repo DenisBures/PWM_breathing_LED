@@ -20,7 +20,6 @@ Zatímco v prvním kanálu ***PWM_driver_1*** je tento proces automatizován pom
 | Jméno portu | Směr | Typ |
 | :---: | :---: | :--- |
 | `clk` | in | `std_logic` |
-| `rst` | in | `std_logic` |
 | `btnu` | in | `std_logic` |
 | `seg` | out | `std_logic_vector(6 downto 0)` |
 | `an` | out | `std_logic_vector(7 downto 0)` |
