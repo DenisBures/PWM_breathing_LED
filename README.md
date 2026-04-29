@@ -31,7 +31,7 @@ Zatímco v prvním kanálu ***PWM_driver_1*** je tento proces automatizován pom
 ### PWM_Driver_1: zajišťuje chod dýchaní LED1
 
 
-![](PWM_driver_1.png)
+![](/img/PWM_driver_1.png)
 
 **Tabulka pro PWM_driver1:**
 | Jméno portu | Směr | Typ |
@@ -44,7 +44,7 @@ Jako první modul je ***clock enable***, která z hlavního hodinový signálu `
 
 ### PWM_Driver_2: zajišťuje statický jas LED2
 
-![](PWM_driver_2.png)
+![](/img/PWM_driver_2.png)
 
 **Tabulka pro driver2:**
 | Jméno portu | Směr | Typ |
@@ -60,15 +60,15 @@ Tento druhý driver ovládá druhou LEDku a to za pomocí switchů, které jsou 
 
 ### Breathing Driver
 
-![](simulace_breathing.png)
+![](/sim/simulace_breathing.png)
 
 ### Driver 2
 
-![](simulace_PWM_driver_2.png)
+![](/sim/simulace_PWM_driver_2.png)
 
 ## **Schéma VHDL**
 
-![](schéma-vhdl.png)
+![](/img/schéma-vhdl.png)
 
 
 
