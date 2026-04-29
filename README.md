@@ -47,7 +47,7 @@ Jako první modul je ***clock enable***, která z hlavního hodinový signálu `
 
 ![](/img/PWM_driver_2.png)
 
-**Tabulka pro driver2:**
+**Tabulka pro PWM_driver2:**
 | Jméno portu | Směr | Typ |
 | :---: | :---: | :--- |
 | `clk` | in | `std_logic` |
