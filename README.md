@@ -61,7 +61,7 @@ Breathing Driver
 
 Driver 2
 
-![](simulace PWM_driver_2 se změnou hodnoty sw při chodu.png)
+![](simulace_PWM_driver_2.png)
 
 **Schéma VHDL**
 
