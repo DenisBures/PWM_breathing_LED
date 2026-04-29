@@ -7,9 +7,9 @@ Zatímco v prvním kanálu ***PWM_driver_1*** je tento proces automatizován pom
 
 
 
-**Bloková schémata:**
+## **Bloková schémata:**
 
-PWM_Breathing_LED: TOP modul 
+### PWM_Breathing_LED: TOP modul 
 ![](topPWMmodul2.png)
 
 **Tabulka pro TOP model:**
@@ -25,7 +25,7 @@ PWM_Breathing_LED: TOP modul
 | `led2` | out | `std_logic` |
 
 
-PWM_Driver_1: zajišťuje chod dýchaní LED1
+### PWM_Driver_1: zajišťuje chod dýchaní LED1
 
 
 ![](PWM_driver_1.png)
@@ -39,7 +39,7 @@ PWM_Driver_1: zajišťuje chod dýchaní LED1
 
 Jako první modul je ***clock enable***, která z hlavního hodinový signálu `clk` generuje úzké pulzy na svém výstupu `ce` s menší frekvencí. Tento výstup `ce` následně ovlivňuje rychlost čítání v modulu ***counter***, který počítá od 0 do maxima (512) a poté zpět od 0. Každou další hodnotu přičíta v momentě kdy `ce` je aktivní. Z výstupu ***counteru*** `cnt`, na kterém je logický vektor aktuálního stavu ***counter***, probíhá řízení posledního bloku ***breathing_driver***. Tento model v sobě uvnitř dělá to, že porovnává jas který má v sobě s `cnt` průběhem. Výsledkem potom je PWM signál, jehož střída se plynule mění v čase, což vytváří vizuální efekt dýchání.     
 
-PWM_Driver_2: zajišťuje statický jas LED2
+### PWM_Driver_2: zajišťuje statický jas LED2
 
 ![](PWM_driver_2.png)
 
@@ -53,17 +53,17 @@ PWM_Driver_2: zajišťuje statický jas LED2
 
 Tento druhý driver ovládá druhou LEDku a to za pomocí switchů, které jsou na desce. Každý switch představuje 1 bit, který je buďto v režimu 0 (off) nebo 1 (on). Tyto bity dohromady budou určovat střídu PWM signálu. Díky tomu budeme ovládat jas LEDky a to pomocí toho, že v jedné periodě bude LEDka buďto více svítit nebo bude více zhasnutá, což právě bude mít na starost střída signálu. Tento efekt bude ve výsledku vypadat že LEDka bude právě pomocí switchů měnit svůj jas.
 
-**Simulace**
+## **Simulace**
 
-Breathing Driver
+### Breathing Driver
 
 ![](simulace.png)
 
-Driver 2
+### Driver 2
 
 ![](simulace_PWM_driver_2.png)
 
-**Schéma VHDL**
+## **Schéma VHDL**
 
 ![](schéma-vhdl.png)
 
