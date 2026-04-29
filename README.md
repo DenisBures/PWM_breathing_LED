@@ -55,7 +55,13 @@ Tento druhý driver ovládá druhou LEDku a to za pomocí switchů, které jsou 
 
 **Simulace**
 
+Breathing Driver
+
 ![](simulace.png)
+
+Driver 2
+
+![](simulace PWM_driver_se změnou hodnoty sw při chodu.png)
 
 **Schéma VHDL**
 
