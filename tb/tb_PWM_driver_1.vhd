@@ -21,7 +21,7 @@ architecture tb of tb_PWM_driver_1 is
     signal rst  : std_logic;
     signal led1 : std_logic;
 
-    constant TbPeriod : time := 1000 ns; -- ***EDIT*** Put right period here
+    constant TbPeriod : time := 10 ns; 
     signal TbClock : std_logic := '0';
     signal TbSimEnded : std_logic := '0';
 
