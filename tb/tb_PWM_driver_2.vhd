@@ -18,7 +18,7 @@ architecture tb of tb_PWM_driver_2 is
     signal led : std_logic;
     signal sw  : std_logic_vector (7 downto 0);
 
-    constant TbPeriod : time := 10 ns; -- ***EDIT*** Put right period here
+    constant TbPeriod : time := 10 ns; 
     signal TbClock : std_logic := '0';
     signal TbSimEnded : std_logic := '0';
 
