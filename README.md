@@ -60,7 +60,7 @@ Tento druhý driver ovládá druhou LEDku a to za pomocí switchů, které jsou 
 
 ### Breathing Driver
 
-![](simulace.png)
+![](simulace_breathing.png)
 
 ### Driver 2
 
