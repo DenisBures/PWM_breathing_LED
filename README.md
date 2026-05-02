@@ -62,7 +62,7 @@ Tento druhý driver ovládá druhou LEDku a to za pomocí switchů, které jsou 
 
 ![](/sim/simulace_breathing.png)
 
-### Driver 2
+### PWM_Driver_2
 
 ![](/sim/simulace_PWM_driver_2.png)
 
