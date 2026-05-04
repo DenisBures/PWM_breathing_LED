@@ -18,7 +18,10 @@ Zatímco v prvním kanálu ***PWM_driver_1*** je tento proces automatizován pom
 * **Implementace**: Projekt byl vytvářen ve VHDL na desku **Artix-7 FPGA (Nexys A7-50T/100T)**.
 
 ## Entity funkce
-[Entity breathing_driver](vhd/breathing_driver.vhd)
+* [breathing_driver_entity](vhd/breathing_driver.vhd):
+* [clk_en_entity](vhd/clk_en.vhd):
+* [counter_entity](vhd/counter.vhd):
+* [pwm_driver_2_entity](vhd/pwm_driver_2.vhd):
 
 
 | **Komponenty** | **Funkce** | **Popis komponenty** |
