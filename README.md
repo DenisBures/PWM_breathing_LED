@@ -17,19 +17,18 @@ Zatímco v prvním kanálu ***PWM_driver_1*** je tento proces automatizován pom
 ## Využité součástky
 * **Implementace**: Projekt byl vytvářen ve VHDL na desku **Artix-7 FPGA (Nexys A7-50T/100T)**.
 
-## Entity funkce
-* [breathing_driver_entity](vhd/breathing_driver.vhd):
-* [clk_en_entity](vhd/clk_en.vhd):
-* [counter_entity](vhd/counter.vhd):
-* [pwm_driver_2_entity](vhd/pwm_driver_2.vhd):
-
-
 | **Komponenty** | **Funkce** | **Popis komponenty** |
 | :---: | :---: | :---: |
 | **8x Přepínač [J15 - R13]** | Přepínaní jasu | 8 přepínačů nám vytváří 256 možností nastavení jasu |
 | **LED [H17]**  | Dýchací LED | LEDka která pomalu zhasíná a rozvící se představující simulaci dýchaní |
 | **LED [K15]** | Měnící jas LED | LEDka která mění svůj jas podle nastavení přepínačů |
 | **7-seg Displej** | Indikátor | Ukazuje jak velkým jasem momentálně svítí LED [K15] |
+
+## Entity funkce
+* [breathing_driver_entity](vhd/breathing_driver.vhd):
+* [clk_en_entity](vhd/clk_en.vhd):
+* [counter_entity](vhd/counter.vhd):
+* [pwm_driver_2_entity](vhd/pwm_driver_2.vhd):
 
 ## **Bloková schémata:**
 
