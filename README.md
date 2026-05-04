@@ -77,7 +77,7 @@ Jako první modul je ***clock enable***, která z hlavního hodinový signálu `
 
 Vidíme jednu celou periodu, kdy LED [H17] se pomalu rozsvící a následně zhasíná
 * cnt(7:0): Postupně lineárně narůstá a v každém taktu signálu `clk`, je porovnávána se střídou, která je v ***breathing_driveru*** nastavena pomocí  pulzů z ***counteru***.
-* cnt(8): bit, který určuje směr signálu, zda-li se pulz kdy LED[H17] má svítit zvětšuje (stav 0) nebo zmenšuje (stav 1).
+* cnt(8): bit, který určuje směr signálu, zda-li se pulz kdy LED[H17] má svítit, zvětšuje (stav 0) nebo zmenšuje (stav 1).
 
 ### PWM_driver_2
 
