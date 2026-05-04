@@ -71,7 +71,7 @@ Jako první modul je ***clock enable***, která z hlavního hodinový signálu `
 
 ## **Simulace**
 
-### Breathing Driver
+### Breathing_Driver
 
 ![](/sim/simulace_breathing.png)
 
