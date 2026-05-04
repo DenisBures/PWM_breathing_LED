@@ -91,7 +91,7 @@ Vidíme jednu celou periodu, kdy LED [H17] se pomalu rozsvící a následně zha
 
 ## **Schéma VHDL**
 
-
+## **Videoukázka**
 
 
 
