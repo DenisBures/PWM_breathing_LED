@@ -41,7 +41,7 @@ Zatímco v prvním kanálu ***PWM_driver_1*** je tento proces automatizován pom
 | `led2` | out | `std_logic` |
 
 
-### PWM_Driver_1: zajišťuje chod dýchaní LED1
+### PWM_Driver_1: zajišťuje chod dýchaní 
 
 
 ![](/img/PWM_driver_1.png)
@@ -55,7 +55,7 @@ Zatímco v prvním kanálu ***PWM_driver_1*** je tento proces automatizován pom
 
 Jako první modul je ***clock enable***, která z hlavního hodinový signálu `clk` generuje úzké pulzy na svém výstupu `ce` s menší frekvencí. Tento výstup `ce` následně ovlivňuje rychlost čítání v modulu ***counter***, který počítá od 0 do maxima (512) a poté zpět od 0. Každou další hodnotu přičíta v momentě kdy `ce` je aktivní. Z výstupu ***counteru*** `cnt`, na kterém je logický vektor aktuálního stavu ***counter***, probíhá řízení posledního bloku ***breathing_driver***. Tento model v sobě uvnitř dělá to, že porovnává jas který má v sobě s `cnt` průběhem. Výsledkem potom je PWM signál, jehož střída se plynule mění v čase, což vytváří vizuální efekt dýchání na LED [H17].     
 
-### PWM_Driver_2: zajišťuje statický jas LED2
+### PWM_Driver_2: zajišťuje statický jas
 
 ![](/img/PWM_driver_2.png)
 
@@ -74,6 +74,9 @@ Jako první modul je ***clock enable***, která z hlavního hodinový signálu `
 ### Breathing_Driver
 
 ![](/sim/simulace_breathing.png)
+
+Vidíme jednu celou periodu, kdy LED [H17] se pomalu rozsvící a následně zhasíná
+* Sběrnice cnt(7:0) funguje jako digitální pila. Hodnota na těchto bitech lineárně narůstá a určuje okamžik, kdy má PWM signál změnit stav z '1' na '0'. Čím vyšší je hodnota, se kterou tyto bity porovnáváme, tím déle zůstává signál v logické jedničce a tím jasněji LED svítí.
 
 ### PWM_driver_2
 
