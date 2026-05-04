@@ -53,7 +53,7 @@ Zatímco v prvním kanálu ***PWM_driver_1*** je tento proces automatizován pom
 | `rst` | in | `std_logic` |
 | `led` | out | `std_logic` |
 
-Jako první modul je ***clock enable***, která z hlavního hodinový signálu `clk` generuje úzké pulzy na svém výstupu `ce` s menší frekvencí. Tento výstup `ce` následně ovlivňuje rychlost čítání v modulu ***counter***, který počítá od 0 do maxima (512) a poté zpět od 0. Každou další hodnotu přičíta v momentě kdy `ce` je aktivní. Z výstupu ***counteru*** `cnt`, na kterém je logický vektor aktuálního stavu ***counter***, probíhá řízení posledního bloku ***breathing_driver***. Tento model v sobě uvnitř dělá to, že porovnává jas který má v sobě s `cnt` průběhem. Výsledkem potom je PWM signál, jehož střída se plynule mění v čase, což vytváří vizuální efekt dýchání.     
+Jako první modul je ***clock enable***, která z hlavního hodinový signálu `clk` generuje úzké pulzy na svém výstupu `ce` s menší frekvencí. Tento výstup `ce` následně ovlivňuje rychlost čítání v modulu ***counter***, který počítá od 0 do maxima (512) a poté zpět od 0. Každou další hodnotu přičíta v momentě kdy `ce` je aktivní. Z výstupu ***counteru*** `cnt`, na kterém je logický vektor aktuálního stavu ***counter***, probíhá řízení posledního bloku ***breathing_driver***. Tento model v sobě uvnitř dělá to, že porovnává jas který má v sobě s `cnt` průběhem. Výsledkem potom je PWM signál, jehož střída se plynule mění v čase, což vytváří vizuální efekt dýchání na LED [H17].     
 
 ### PWM_Driver_2: zajišťuje statický jas LED2
 
