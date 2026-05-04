@@ -67,7 +67,7 @@ Jako první modul je ***clock enable***, která z hlavního hodinový signálu `
 | `sw` | in | `std_logic_vector(7 downto 0)` |
 | `led` | out | `std_logic` |
 
-**PWM_driver_2** ovládá druhou LED [K15]. Na jeho vstup `cnt` je přiveden signál `s_cnt_expanded(8:0)` ke kterému je ještě přiveden 1 bit `0` jak je vidět na schématu, který slouží...  které jsou na desce. Každý switch představuje 1 bit, který je buďto v režimu 0 (off) nebo 1 (on). Tyto bity dohromady budou určovat střídu PWM signálu. Díky tomu budeme ovládat jas LEDky a to pomocí toho, že v jedné periodě bude LEDka buďto více svítit nebo bude více zhasnutá, což právě bude mít na starost střída signálu. Tento efekt bude ve výsledku vypadat že LEDka bude právě pomocí switchů měnit svůj jas.
+**PWM_driver_2** ovládá druhou LED [K15]. Na jeho vstup `cnt` je přiveden signál `s_cnt_expanded(8:0)` ke kterému je ještě přiveden 1 bit `0` jak je vidět na schématu a to z toho důvodu že ***breathing_driver*** který používáme v ***PWM_driver_1*** očekává 9 bitový signál. Jelikož používáme 8 přepínačů, výstup z nich je pouze 8bitový a proto je zde přiveden 9. bit který bude vždy 0 a vytvoří tak 9bitový signál pro ***breathing_driver***. Každý přepínač představuje 1 bit, který je buďto v režimu 0 (off) nebo 1 (on). Tyto bity dohromady budou určovat střídu PWM signálu. Díky tomu budeme ovládat jas LED [K15] a to pomocí toho, že v jedné periodě bude LEDka buďto více svítit nebo bude více zhasnutá, což právě bude mít na starost střída signálu. Tento efekt bude ve výsledku vypadat že LED [K15] bude právě pomocí přepínačů měnit svůj jas.
 
 ## **Simulace**
 
@@ -76,7 +76,8 @@ Jako první modul je ***clock enable***, která z hlavního hodinový signálu `
 ![](/sim/simulace_breathing.png)
 
 Vidíme jednu celou periodu, kdy LED [H17] se pomalu rozsvící a následně zhasíná
-* Sběrnice cnt(7:0)
+* cnt(7:0): Postupně lineárně narůstá a v každém taktu signálu `clk`, je porovnávána se střídou, která je v ***breathing_driveru*** nastavena pomocí  pulzů z ***counteru***.
+* cnt(8): bit, který určuje směr signálu, zda-li se pulz kdy LED[H17] má svítit zvětšuje (stav 0) nebo zmenšuje (stav 1).
 
 ### PWM_driver_2
 
