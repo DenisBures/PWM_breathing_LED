@@ -27,7 +27,7 @@ Zatímco v prvním kanálu ***PWM_driver_1*** je tento proces automatizován pom
 ## **Bloková schémata:**
 
 ### PWM_Breathing_LED: TOP modul 
-![](/img/topPWMmodul2.png)
+![](/img/top_PWM_modul_1.png)
 
 **Tabulka pro TOP model:**
 | Jméno portu | Směr | Typ |
@@ -44,7 +44,7 @@ Zatímco v prvním kanálu ***PWM_driver_1*** je tento proces automatizován pom
 ### PWM_Driver_1: zajišťuje chod dýchaní 
 
 
-![](/img/PWM_driver_1.png)
+![](/img/PWM_driver_1_1.png)
 
 **Tabulka pro PWM_driver_1:**
 | Jméno portu | Směr | Typ |
