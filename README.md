@@ -9,7 +9,8 @@ Vytvořte modul, který plynule mění jas LED diody generováním trojúhelník
 
 Zatímco v prvním kanálu ***PWM_driver_1*** je tento proces automatizován pomocí ***countr*** a ***clk_en*** pro dosažení cyklického dýchání, druhý kanál ***PWM_driver_2*** využívá stejnou logiku pro statické nastavení jasu, kde je nejvyšší bit pevně uzemněn a zbylých 8 bitů je přímo řízeno mechanickými přepínači.
 
-
+## Využité součástky
+* **Implementace**: Projekt je zprovozněn ve VHDL na desku Artix-7 FPGA (Nexys A7-50T/100T).
 
 ## **Bloková schémata:**
 
