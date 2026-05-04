@@ -14,10 +14,10 @@ Zatímco v prvním kanálu ***PWM_driver_1*** je tento proces automatizován pom
 
 | Komponenty | Funkce | Popis |
 | :---: | :---: | :---: |
-| 8x Přepínač [J15 - R13] | Přepínaní jasu | 8 přepínačů nám vytváří 256 možností nastavení jasu |
-| LED [H17]  | Dýchací LED | LEDka která pomalu zhasíná a rozvící se představující simulaci dýchaní |
-| LED [K15] | Měnící jas LED | LEDka která mění svůj jas podle nastavení přepínačů |
-| 7-seg Displej | Indikátor | Ukazuje jak velkým jasem momentálně svítí LED [K15] |
+| **8x Přepínač [J15 - R13]** | Přepínaní jasu | 8 přepínačů nám vytváří 256 možností nastavení jasu |
+| **LED [H17]**  | Dýchací LED | LEDka která pomalu zhasíná a rozvící se představující simulaci dýchaní |
+| **LED [K15]** | Měnící jas LED | LEDka která mění svůj jas podle nastavení přepínačů |
+| **7-seg Displej** | Indikátor | Ukazuje jak velkým jasem momentálně svítí LED [K15] |
 
 ## **Bloková schémata:**
 
