@@ -76,7 +76,7 @@ Jako první modul je ***clock enable***, která z hlavního hodinový signálu `
 ![](/sim/simulace_breathing.png)
 
 Vidíme jednu celou periodu, kdy LED [H17] se pomalu rozsvící a následně zhasíná
-* Sběrnice cnt(7:0) funguje jako digitální pila. Hodnota na těchto bitech lineárně narůstá a určuje okamžik, kdy má PWM signál změnit stav z '1' na '0'. Čím vyšší je hodnota, se kterou tyto bity porovnáváme, tím déle zůstává signál v logické jedničce a tím jasněji LED svítí.
+* Sběrnice cnt(7:0)
 
 ### PWM_driver_2
 
