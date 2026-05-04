@@ -12,7 +12,7 @@ Zatímco v prvním kanálu ***PWM_driver_1*** je tento proces automatizován pom
 ## Využité součástky
 * **Implementace**: Projekt byl vytvářen ve VHDL na desku **Artix-7 FPGA (Nexys A7-50T/100T)**.
 
-| Komponenty | Funkce | Popis |
+| **Komponenty** | **Funkce** | **Popis komponenty** |
 | :---: | :---: | :---: |
 | **8x Přepínač [J15 - R13]** | Přepínaní jasu | 8 přepínačů nám vytváří 256 možností nastavení jasu |
 | **LED [H17]**  | Dýchací LED | LEDka která pomalu zhasíná a rozvící se představující simulaci dýchaní |
