@@ -1,4 +1,9 @@
 # PWM_breathing_LED
+#### Autoři
+* Denis Bureš
+* Pavel Hroch
+* Matyáš Stoupal
+
 ### Zadání: 
 Vytvořte modul, který plynule mění jas LED diody generováním trojúhelníkového průběhu pro pracovní cyklus PWM, simulující „nádech“ a „výdech“. 
 
